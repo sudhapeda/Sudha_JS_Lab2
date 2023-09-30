@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>  
+    <link rel="stylesheet" type="text/css" href="styleindex.css">
+</head>
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Javascript Quiz</h1>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+            <div class="options">
+                <input type="radio" name="answer" value="btn0"><span id="choice0"></span> <br/>
+                <input type="radio" name="answer" value="btn1"><span id="choice1"></span> <br/>
+                <input type="radio" name="answer" value="btn2"><span id="choice2"></span> <br/>
+                <input type="radio" name="answer" value="btn3"><span id="choice3"></span> <br/>
+                <input type="radio" name="answer" id="hid" value="btn4" style="display: none;" checked><br/>
+            </div>
+            <div><input class="nxt" type="button"  value = "Next" onclick="handleOptionButton()"></div>
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
